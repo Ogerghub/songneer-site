@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Songneer — Privacy Policy</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #0D0D12;
+            color: #F0F0F5;
+            line-height: 1.7;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 8px;
+            background: linear-gradient(90deg, #6C5CE7, #00D2FF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .updated {
+            color: #9090A0;
+            font-size: 0.9rem;
+            margin-bottom: 32px;
+        }
+        h2 {
+            font-size: 1.3rem;
+            color: #F0F0F5;
+            margin-top: 32px;
+            margin-bottom: 12px;
+        }
+        p, li {
+            color: #BBBBC5;
+            margin-bottom: 12px;
+        }
+        ul { padding-left: 24px; }
+        li { margin-bottom: 8px; }
+        strong { color: #F0F0F5; }
+        a { color: #6C5CE7; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .highlight {
+            background: rgba(108, 92, 231, 0.1);
+            border-left: 3px solid #6C5CE7;
+            padding: 16px 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 20px 0;
+        }
+        .highlight p { margin-bottom: 0; }
+        footer {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid #2A2A38;
+            color: #74748A;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p class="updated">Last updated: June 6, 2026</p>
+
+        <div class="highlight">
+            <p><strong>The short version:</strong> Songneer processes everything on your device. We don't collect, store, or transmit any of your data. No accounts, no analytics, no tracking.</p>
+        </div>
+
+        <h2>Who We Are</h2>
+        <p>Songneer is developed by Cengiz Oger. This privacy policy explains how the Songneer iOS application ("the App") handles your information.</p>
+
+        <h2>Data We Collect</h2>
+        <p><strong>None.</strong> Songneer does not collect any personal data, usage data, analytics, or telemetry of any kind.</p>
+
+        <h2>Audio Processing</h2>
+        <p>When you import or record audio in Songneer:</p>
+        <ul>
+            <li>All audio analysis is performed <strong>entirely on your device</strong> using on-device machine learning models.</li>
+            <li>No audio data is uploaded to any server.</li>
+            <li>Temporary audio files are stored only in the app's local sandbox and are not accessible to other apps.</li>
+        </ul>
+
+        <h2>Apple Music Integration</h2>
+        <p>Songneer uses Apple's MusicKit framework to search the Apple Music catalog. When you search for a song:</p>
+        <ul>
+            <li>Search queries are sent to Apple's servers through their official API.</li>
+            <li>Songneer only accesses 30-second song previews that Apple makes publicly available.</li>
+            <li>We do not access your Apple Music library or listening history.</li>
+        </ul>
+        <p>Apple's handling of MusicKit data is governed by <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's Privacy Policy</a>.</p>
+
+        <h2>ShazamKit</h2>
+        <p>Songneer uses Apple's ShazamKit to identify songs. When you use song identification:</p>
+        <ul>
+            <li>A short audio fingerprint is sent to Apple's Shazam service for matching.</li>
+            <li>This is handled entirely by Apple's framework. Songneer does not intercept or store the fingerprint.</li>
+        </ul>
+
+        <h2>In-App Purchases</h2>
+        <p>Songneer offers a one-time "Songneer Pro" purchase through Apple's App Store. All payment processing is handled by Apple. We do not have access to your payment information.</p>
+
+        <h2>Data Storage</h2>
+        <p>The following data is stored <strong>locally on your device only</strong>:</p>
+        <ul>
+            <li>Your app preferences (stored in UserDefaults)</li>
+            <li>Composition count and trial status</li>
+            <li>Analysis history entries (stored in local SwiftData database)</li>
+            <li>Imported audio files and exported compositions</li>
+        </ul>
+        <p>None of this data is transmitted off your device.</p>
+
+        <h2>Third-Party Services</h2>
+        <p>Songneer does not integrate any third-party analytics, advertising, crash reporting, or tracking services.</p>
+
+        <h2>Children's Privacy</h2>
+        <p>Songneer does not knowingly collect any information from children. The app does not require an account and collects no personal data from any user.</p>
+
+        <h2>Changes to This Policy</h2>
+        <p>If we update this privacy policy, we will post the revised version on this page with an updated date. Since we collect no data, any changes would likely be related to new features that interact with Apple's services.</p>
+
+        <h2>Contact</h2>
+        <p>If you have questions about this privacy policy, contact us at:</p>
+        <p><a href="mailto:support@songneer.com">support@songneer.com</a></p>
+
+        <footer>
+            <p>&copy; 2026 Cengiz Oger. All rights reserved.</p>
+            <p>Songneer is not affiliated with Apple Inc., Spotify, or Shazam.</p>
+        </footer>
+    </div>
+</body>
+</html>
