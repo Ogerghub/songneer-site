@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Is My Song Too Similar to Another Song? How to Check | Songneer</title>
+<meta name="description" content="Worried your song is too close to one you love? What's actually protectable, how to test your own melody in twenty minutes, and what a similarity percentage really means.">
+<!-- TODO(verify): confirm songneer.com is pointed at GitHub Pages. If not, canonical must be the ogerghub.github.io URL. -->
+<link rel="canonical" href="https://songneer.com/is-my-song-too-similar.html">
+<meta property="og:title" content="Is My Song Too Similar to Another Song? How to Check">
+<meta property="og:description" content="What's actually protectable, how to test your own melody, and what a similarity percentage really means.">
+<meta property="og:type" content="article">
+<meta name="theme-color" content="#0D0D12">
+<style>
+  :root{
+    --bg:#0D0D12; --card:#15151E; --ink:#F0F0F5; --body:#BBBBC5; --muted:#74748A;
+    --line:#2A2A38; --violet:#6C5CE7; --cyan:#00D2FF; --pink:#E879C7;
+    --amber:#F5C542; --red:#FF6B6B; --grey:#3A3A48;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--body);line-height:1.7;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    -webkit-text-size-adjust:100%}
+  .container{max-width:720px;margin:0 auto;padding:40px 20px 64px}
+  .grad{background:linear-gradient(90deg,var(--violet),var(--cyan));
+    -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
+  h1{font-size:2rem;line-height:1.25;margin-bottom:8px;letter-spacing:-.02em}
+  .subtitle{color:var(--muted);font-size:1rem;margin-bottom:8px}
+  h2{font-size:1.3rem;color:var(--ink);margin:34px 0 12px;letter-spacing:-.01em}
+  h3{font-size:1.02rem;color:var(--ink);margin:22px 0 6px}
+  p,li{margin-bottom:12px}
+  .lede{font-size:1.1rem;color:var(--ink);margin-bottom:14px}
+  ul,ol{padding-left:24px}
+  li{margin-bottom:8px}
+  strong{color:var(--ink)}
+  a{color:var(--cyan);text-decoration:none}
+  a:hover{text-decoration:underline}
+  figure{margin:28px 0}
+  svg{display:block;width:100%;height:auto}
+  figcaption{font-size:.86rem;color:var(--muted);margin-top:10px;text-align:center;line-height:1.5}
+  .callout{background:rgba(108,92,231,.09);border:1px solid rgba(108,92,231,.28);
+    border-radius:12px;padding:20px 22px;margin:28px 0}
+  .callout.warn{background:rgba(245,197,66,.07);border-color:rgba(245,197,66,.3)}
+  .callout p:last-child,.callout ul:last-child{margin-bottom:0}
+  .steps{list-style:none;padding:0;counter-reset:s}
+  .steps li{counter-increment:s;position:relative;padding-left:46px;margin-bottom:16px}
+  .steps li::before{content:counter(s);position:absolute;left:0;top:1px;width:30px;height:30px;
+    border-radius:50%;display:grid;place-items:center;font-weight:700;font-size:.9rem;color:#0D0D12;
+    background:linear-gradient(135deg,var(--violet),var(--cyan))}
+  .cta-card{background:rgba(108,92,231,.08);border:1px solid rgba(108,92,231,.22);
+    border-radius:14px;padding:24px;margin:36px 0 12px}
+  .cta-card h2{margin-top:0}
+  .shot{display:block;width:100%;max-width:300px;margin:20px auto 8px;border-radius:16px;
+    border:1px solid var(--line)}
+  .btn{display:inline-block;margin-top:14px;padding:13px 22px;border-radius:10px;font-weight:650;
+    color:#0D0D12;background:linear-gradient(135deg,var(--violet),var(--cyan))}
+  .btn:hover{text-decoration:none;opacity:.92}
+  footer{margin-top:48px;padding-top:24px;border-top:1px solid var(--line);
+    color:var(--muted);font-size:.85rem}
+  footer a{color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1 class="grad">Is my song too similar to another song?</h1>
+<p class="subtitle">What's actually protectable, how to check your own melody, and what a similarity
+percentage really means.</p>
+
+<p class="lede">There is no yes-or-no answer — similarity is a spectrum, and only part of what your ear
+hears as “similar” is actually protectable. What matters is <strong>which element</strong> is similar
+and <strong>how much</strong> of it, and you can work that out yourself in about twenty minutes.</p>
+
+<p>Written for songwriters, not lawyers. This is general information, not legal advice.</p>
+
+<figure>
+<svg viewBox="0 0 800 310" role="img" aria-labelledby="rollT rollD">
+  <title id="rollT">Two melodies compared as note blocks</title>
+  <desc id="rollD">Your melody and a reference melody drawn as rows of notes. Four notes in the middle
+  sit at identical pitches and rhythm — that shared run is the part worth checking.</desc>
+  <rect x="262" y="8" width="238" height="294" rx="10" fill="var(--amber)" opacity=".13"/>
+  <text x="381" y="28" text-anchor="middle" font-size="13" font-weight="700" fill="var(--amber)">shared run</text>
+  <text x="50" y="52" font-size="13" font-weight="700" fill="var(--violet)">Your melody</text>
+  <g fill="var(--violet)">
+    <rect x="50" y="128" width="44" height="14" rx="4"/><rect x="106" y="106" width="44" height="14" rx="4"/>
+    <rect x="162" y="84" width="44" height="14" rx="4"/><rect x="218" y="106" width="44" height="14" rx="4"/>
+    <rect x="274" y="62" width="44" height="14" rx="4"/><rect x="330" y="84" width="44" height="14" rx="4"/>
+    <rect x="386" y="106" width="44" height="14" rx="4"/><rect x="442" y="84" width="44" height="14" rx="4"/>
+    <rect x="498" y="128" width="44" height="14" rx="4"/><rect x="554" y="150" width="44" height="14" rx="4"/>
+    <rect x="610" y="128" width="44" height="14" rx="4"/><rect x="666" y="106" width="44" height="14" rx="4"/>
+  </g>
+  <line x1="40" y1="182" x2="760" y2="182" stroke="var(--line)" stroke-width="2"/>
+  <text x="50" y="212" font-size="13" font-weight="700" fill="var(--cyan)">Reference track</text>
+  <g fill="var(--cyan)">
+    <rect x="50" y="266" width="44" height="14" rx="4"/><rect x="106" y="288" width="44" height="14" rx="4"/>
+    <rect x="162" y="266" width="44" height="14" rx="4"/><rect x="218" y="244" width="44" height="14" rx="4"/>
+    <rect x="274" y="222" width="44" height="14" rx="4"/><rect x="330" y="244" width="44" height="14" rx="4"/>
+    <rect x="386" y="266" width="44" height="14" rx="4"/><rect x="442" y="244" width="44" height="14" rx="4"/>
+    <rect x="498" y="288" width="44" height="14" rx="4"/><rect x="554" y="266" width="44" height="14" rx="4"/>
+    <rect x="610" y="288" width="44" height="14" rx="4"/><rect x="666" y="266" width="44" height="14" rx="4"/>
+  </g>
+</svg>
+<figcaption>Strip both songs back to bare notes and the question stops being “does it feel similar?”
+and starts being “how long is the run that matches?”</figcaption>
+</figure>
+
+<div class="callout">
+<p><strong style="color:var(--ink)">The short version</strong></p>
+<ul>
+<li>Chord progressions, grooves, tempo and genre are almost never the problem.</li>
+<li><strong>Melody and lyrics are where the real risk lives</strong> — a distinctive sequence of pitches
+and rhythms, or a hook phrase.</li>
+<li>Two things have to be true for a claim: the melody is substantially similar, <em>and</em> you
+plausibly had access to the original. Independent creation is a real defence.</li>
+<li>Subconscious copying is common and forgivable — catching it before release is the entire point.</li>
+</ul>
+</div>
+
+<h2>What's actually protectable — and what isn't</h2>
+<p>Most of the time a songwriter panics, they're panicking about the wrong layer of the song.</p>
+
+<figure>
+<svg viewBox="0 0 800 300" role="img" aria-labelledby="layT layD">
+  <title id="layT">The layers of a song, by risk</title>
+  <desc id="layD">Production, tempo and groove, and chord progression are shared building blocks with
+  low risk. Melody and lyrics are protectable and carry the real risk.</desc>
+  <text x="20" y="24" font-size="13" font-weight="700" fill="var(--muted)">SHARED BUILDING BLOCKS — almost never the problem</text>
+  <rect x="20" y="38" width="760" height="42" rx="9" fill="var(--grey)" opacity=".55"/>
+  <text x="40" y="65" font-size="16" font-weight="600" fill="var(--ink)">Production &amp; mix</text>
+  <rect x="20" y="88" width="760" height="42" rx="9" fill="var(--grey)" opacity=".55"/>
+  <text x="40" y="115" font-size="16" font-weight="600" fill="var(--ink)">Tempo, groove &amp; genre</text>
+  <rect x="20" y="138" width="760" height="42" rx="9" fill="var(--grey)" opacity=".55"/>
+  <text x="40" y="165" font-size="16" font-weight="600" fill="var(--ink)">Chord progression</text>
+  <text x="20" y="212" font-size="13" font-weight="700" fill="var(--red)">PROTECTABLE — where claims actually come from</text>
+  <rect x="20" y="226" width="760" height="42" rx="9" fill="var(--red)" opacity=".18"/>
+  <rect x="20" y="226" width="6" height="42" rx="3" fill="var(--red)"/>
+  <text x="40" y="253" font-size="16" font-weight="700" fill="var(--ink)">Melody — pitches + rhythm</text>
+  <rect x="20" y="276" width="760" height="20" rx="7" fill="var(--red)" opacity=".18"/>
+  <rect x="20" y="276" width="6" height="20" rx="3" fill="var(--red)"/>
+  <text x="40" y="291" font-size="14" font-weight="700" fill="var(--ink)">Lyrics &amp; signature hook</text>
+</svg>
+</figure>
+
+<h3>Almost never a problem</h3>
+<ul>
+<li><strong>Chord progressions.</strong> I–V–vi–IV underpins hundreds of hit songs. Progressions are
+the shared vocabulary of popular music, not property.</li>
+<li><strong>Groove, tempo and feel.</strong> Two songs at the same BPM with the same drum pattern will
+sound related. That's genre, not copying.</li>
+<li><strong>Scales, modes and common intervals</strong> — the raw materials.</li>
+<li><strong>Production choices</strong>, like a similar synth patch or mix.</li>
+</ul>
+
+<h3>Where the real risk is</h3>
+<ul>
+<li><strong>Melody.</strong> The specific sequence of pitches <em>and</em> their rhythm. The single most
+common basis for a claim.</li>
+<li><strong>Lyrics.</strong> A distinctive phrase, especially a title line.</li>
+<li><strong>A signature hook</strong> — the three or four seconds someone can identify the song from.</li>
+</ul>
+
+<p>So if your song reminds you of another because of the chords or the vibe, that's the least worrying
+kind of resemblance. If you can sing your melody over their backing track and it lands note for note,
+that's worth checking properly.</p>
+
+<h2>Access matters as much as similarity</h2>
+<p>Similarity alone isn't enough. The other half is whether you could plausibly have heard the original.
+For an obscure track nobody knows, arriving at the same phrase independently is entirely possible and is
+a genuine defence. For a song that spent a decade on the radio, it's much harder to argue you'd never
+encountered it.</p>
+<p>This is why <em>subconscious</em> copying is the interesting case. You aren't stealing anything — a
+phrase you absorbed years ago surfaces as though it were new. It happens to careful, honest writers
+constantly. The only real remedy is to check before you release, not after.</p>
+
+<h2>How to check your own song in twenty minutes</h2>
+<ol class="steps">
+<li><strong>Strip it to the melody.</strong> Sing or play the line alone — no chords, no production, no
+lyrics. Everything that was disguising the similarity is gone.</li>
+<li><strong>Change the key and the tempo.</strong> Resemblance hides behind arrangement. Transposing and
+slowing a phrase down often exposes an overlap you'd been hearing past for weeks.</li>
+<li><strong>Search the phrase.</strong> Hum-to-search in the Google app or Shazam, and try a contour
+search on a melody database. This catches famous matches, though it misses most catalogue tracks.</li>
+<li><strong>Ask the question backwards.</strong> What were you listening to the week you wrote it?
+Subconscious borrowing almost always traces to recent rotation.</li>
+<li><strong>Break it into dimensions.</strong> “Similar” is rarely uniform. Harmony, rhythm, melodic
+contour and tension arc can each be close or distant, and only some of them matter. A single overall
+impression hides which one is driving the feeling.</li>
+</ol>
+
+<h2>What a similarity percentage actually means</h2>
+<p>A number is a place to look, not a verdict. No threshold makes a song legally infringing — that
+judgment weighs how distinctive the borrowed part is, how central it is to both songs, and access.
+A high score on a four-note run half of pop music shares means very little. A moderate score across
+your entire chorus means a lot.</p>
+
+<figure>
+<svg viewBox="0 0 800 170" role="img" aria-labelledby="mT mD">
+  <title id="mT">What similarity scores mean in practice</title>
+  <desc id="mD">A scale from zero to one hundred percent. Genuinely close songs typically read in the
+  seventies. Scores in the high nineties usually mean a tool is overclaiming.</desc>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="var(--cyan)"/>
+      <stop offset="55%" stop-color="var(--amber)"/>
+      <stop offset="100%" stop-color="var(--red)"/>
+    </linearGradient>
+  </defs>
+  <rect x="30" y="56" width="740" height="26" rx="13" fill="url(#g)" opacity=".9"/>
+  <line x1="600" y1="44" x2="600" y2="94" stroke="var(--ink)" stroke-width="3"/>
+  <text x="600" y="34" text-anchor="middle" font-size="15" font-weight="700" fill="var(--ink)">77%</text>
+  <line x1="748" y1="44" x2="748" y2="94" stroke="var(--red)" stroke-width="3" stroke-dasharray="4 4"/>
+  <text x="748" y="34" text-anchor="middle" font-size="15" font-weight="700" fill="var(--red)">97%</text>
+  <text x="30" y="112" font-size="13" fill="var(--muted)">0%</text>
+  <text x="770" y="112" text-anchor="end" font-size="13" fill="var(--muted)">100%</text>
+  <text x="600" y="134" text-anchor="middle" font-size="13" fill="var(--muted)">where genuinely close songs land</text>
+  <text x="770" y="158" text-anchor="end" font-size="13" fill="var(--red)">above here, someone is overclaiming</text>
+</svg>
+</figure>
+
+<div class="callout warn">
+<p><strong style="color:var(--ink)">Be sceptical of very high numbers.</strong> Genuinely close pieces
+land in the seventies on a note-level comparison, not the high nineties. Any tool showing you 97% is
+measuring something loose, or selling you certainty it doesn't have.</p>
+</div>
+
+<h2>If it comes back close</h2>
+<p>A close read is not a dead end. The fix is usually small, because the identity of a phrase tends to
+live in two or three notes:</p>
+<ul>
+<li><strong>Move the interval at the peak.</strong> The highest note carries most of a phrase's identity
+— shifting it a step often resolves the whole thing.</li>
+<li><strong>Change the rhythm, keep the pitches.</strong> Displacing the phrase against the beat can make
+it read as new while keeping what you liked.</li>
+<li><strong>Rewrite the identifying notes only.</strong> You rarely need to abandon the melody.</li>
+<li><strong>If it's still close and the song matters commercially</strong>, talk to a music lawyer or
+approach the rights holder about a credit. Both are ordinary, and far cheaper before release than after.</li>
+</ul>
+
+<p>And if what you actually want is to write something <em>in the spirit</em> of a song you love without
+going near its melody, that's a different job with a cleaner answer:
+<a href="write-a-song-inspired-by-another-song.html">how to write a song inspired by another song without
+copying it</a>.</p>
+
+<div class="cta-card">
+<h2 class="grad">Songneer</h2>
+<p>Songneer breaks a song down into its musical signature — harmony, tension, rhythm and melodic contour
+— and scores each dimension separately against a reference, so you can see <em>which</em> part is close
+rather than guessing from an overall impression.</p>
+<img class="shot" src="songneer-signature-comparison.png"
+     alt="Songneer's Signature Comparison screen: 77% overall match, broken down into Harmony 94%, Tension 79%, Rhythm 76% and Contour 59%."
+     width="560" height="1095" loading="lazy">
+<p>It then finds public-domain pieces that share that signature and helps you build your own composition
+from legally-clear material, exporting MIDI to GarageBand, Logic or any DAW. It runs on your iPhone and
+is free to try.</p>
+<p style="color:var(--muted)">It's a craft tool, not a legal clearance service. It won't tell you whether
+you're infringing — nothing can. It tells you where to look.</p>
+<a class="btn" href="https://apps.apple.com/app/id6777688873">Songneer on the App Store</a>
+</div>
+
+<h2>Common questions</h2>
+<h3>Can a chord progression be copyrighted?</h3>
+<p>In practice, no. Common progressions are shared building blocks of popular music. If your song
+resembles another only in its chords, that isn't usually the kind of similarity that creates a problem.</p>
+<h3>How many notes can you copy before it's a problem?</h3>
+<p>There is no note count. A short phrase can matter if it's the distinctive hook of a well-known song,
+while a longer run of ordinary scale movement may not matter at all. Distinctiveness counts for more
+than length.</p>
+<h3>What if I copied a melody without realising?</h3>
+<p>That's subconscious copying, and it's common among writers who listen widely. It doesn't make you
+dishonest, but it isn't automatically a defence for a well-known song. Catching it before release is
+what gives you cheap options.</p>
+<h3>Can software tell me whether my song is legal?</h3>
+<p>No, and be wary of anything implying otherwise. Software can measure how much two pieces overlap.
+Whether that overlap creates liability is a legal judgment involving access, distinctiveness and context.</p>
+
+<footer>
+<p>General information for songwriters, not legal advice. If a specific song matters commercially, talk
+to a music lawyer.</p>
+<p>&copy; 2026 Cengiz Oger · <a href="mailto:support@songneer.com">support@songneer.com</a></p>
+<p><a href="index.html">Home</a> · <a href="support.html">Support</a> ·
+<a href="privacy.html">Privacy Policy</a></p>
+</footer>
+
+</div>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {"@type":"FAQPage","mainEntity":[
+      {"@type":"Question","name":"Can a chord progression be copyrighted?","acceptedAnswer":{"@type":"Answer","text":"In practice, no. Common progressions are shared building blocks of popular music. If your song resembles another only in its chords, that is not usually the kind of similarity that creates a problem."}},
+      {"@type":"Question","name":"How many notes can you copy before it's a problem?","acceptedAnswer":{"@type":"Answer","text":"There is no note count. A short phrase can matter if it is the distinctive hook of a well-known song, while a longer run of ordinary scale movement may not matter at all. Distinctiveness counts for more than length."}},
+      {"@type":"Question","name":"What if I copied a melody without realising?","acceptedAnswer":{"@type":"Answer","text":"That is subconscious copying, and it is common among writers who listen widely. It does not make you dishonest, but it is not automatically a defence for a well-known song. Catching it before release is what gives you cheap options."}},
+      {"@type":"Question","name":"Can software tell me whether my song is legal?","acceptedAnswer":{"@type":"Answer","text":"No. Software can measure how much two pieces overlap. Whether that overlap creates liability is a legal judgment involving access, distinctiveness and context."}}
+    ]},
+    {"@type":"SoftwareApplication","name":"Songneer","applicationCategory":"MultimediaApplication","operatingSystem":"iOS","url":"https://apps.apple.com/app/id6777688873"}
+  ]
+}
+</script>
+</body>
+</html>
